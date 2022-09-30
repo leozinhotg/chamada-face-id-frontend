@@ -1,0 +1,19 @@
+<div class="body-select d-flex justify-content-center">
+  <div class="row box-select p-4">
+    <div class="col-12 mt-3 d-flex align-items-start justify-content-center">
+      <svg cIcon name="cilUser" size="sm" width="25" title="Icon"></svg>
+      <p style="padding-left: 8px;" class="title">Face ID - Auto Chamada</p>
+    </div>
+    <div class="col-12 text-center pt-4">
+      <p class="subtitle">Escolha a classe:</p>
+    </div>
+    <div class="col-12 d-flex justify-content-center">
+      <select style="max-width: 300px;" class="form-select" aria-label="Default select example" [(ngModel)]="turmaSelect">
+          <option *ngFor="let turma of turmaList" value="{{ turma.name }}">{{ turma.name }}</option>
+      </select>
+    </div>
+    <div class="col-12 text-center pt-4">
+      <button type="button" class="btn btn-secondary btn-lg" (click)="goFaceCall()">Selecionar</button>
+    </div>
+  </div>
+</div>

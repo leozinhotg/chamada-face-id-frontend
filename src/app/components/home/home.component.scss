@@ -1,0 +1,26 @@
+.body-select {
+    align-items: center;
+    height: 100vh;
+}
+
+.box-select {
+    max-height: 300px !important;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    max-width: 350px !important;
+}
+
+p.title{
+    font-family: 'Oswald', sans-serif;
+}
+
+p.subtitle{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    color: #444;
+}
+
+.form-select{
+    max-width: 200px !important;
+}

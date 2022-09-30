@@ -1,0 +1,28 @@
+<div class="box-video">
+  <div class="row">
+    <video
+      [srcObject]="stream"
+      autoplay
+      id="webcam"
+      width="700"
+      height="560"
+      muted
+      #streamRef>
+    </video>
+  <div class="row">
+    <ng-template #content let-c="close" let-d="dismiss">
+      <div class="modal-body">
+        <div class="d-flex">
+          <img class="img-modal" src="{{photo}}" width="120px" heigth="100px">
+          <div class="box-modal">
+            <p class="title-modal">Presença Confirmada</p>
+            <p class="subtitle-modal">{{ nameStudent }}</p>
+          </div>
+          <div class="icon-box">
+            <svg class="icon-check" cIcon name="cilCheckAlt" size="sm" width="60" height="60" title="Icon"></svg>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </div>
+</div>
